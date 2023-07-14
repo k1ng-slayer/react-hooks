@@ -1,49 +1,51 @@
+// using 'useReducer()' hook
+
 import React, { useReducer } from "react";
 
 const initialState = 0;
 const reducer = (state, action) => {
-  switch (action) {
-    case "increment":
-      return state + 1;
-    case "decrement":
-      return state - 1;
-    case "reset":
-      return initialState;
-    default:
-      return state;
-  }
+    switch (action) {
+        case "increment":
+            return state + 1;
+        case "decrement":
+            return state - 1;
+        case "reset":
+            return initialState;
+        default:
+            return state;
+    }
 };
 
 function CounterOne() {
-  const [count, dispatch] = useReducer(reducer, initialState);
+    const [count, dispatch] = useReducer(reducer, initialState);
 
-  return (
-    <>
-      Count: {count}
-      <br />
-      <button
-        onClick={() => {
-          dispatch("increment");
-        }}
-      >
-        Increment
-      </button>
-      <button
-        onClick={() => {
-          dispatch("decrement");
-        }}
-      >
-        Decrement
-      </button>
-      <button
-        onClick={() => {
-          dispatch("reset");
-        }}
-      >
-        Reset
-      </button>
-    </>
-  );
+    return (
+        <>
+            Count: {count}
+            <br />
+            <button
+                onClick={() => {
+                    dispatch("increment");
+                }}
+            >
+                Increment
+            </button>
+            <button
+                onClick={() => {
+                    dispatch("decrement");
+                }}
+            >
+                Decrement
+            </button>
+            <button
+                onClick={() => {
+                    dispatch("reset");
+                }}
+            >
+                Reset
+            </button>
+        </>
+    );
 }
 
 export default CounterOne;

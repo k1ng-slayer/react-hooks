@@ -38,13 +38,13 @@ function App() {
             {/* <IntervalHookCounter /> */}
             {/* <DataFetching /> */}
             {/* <IndividualDataFetching /> */}
-            <UserContext.Provider value={"Novak"}>
+            {/* <UserContext.Provider value={"Novak"}>
                 <SportContext.Provider value={"Lawn Tennis"}>
                     <ComponentC />
                 </SportContext.Provider>
-            </UserContext.Provider>
+            </UserContext.Provider> */}
             {/* <CounterOne /> */}
-            {/* <CounterTwo /> */}
+            <CounterTwo />
         </div>
     );
 }
