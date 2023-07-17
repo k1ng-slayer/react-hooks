@@ -18,6 +18,10 @@ import ComponentC from "./components/ComponentC";
 import CounterOne from "./components/CounterOne";
 import CounterTwo from "./components/CounterTwo";
 import CounterThree from "./components/CounterThree";
+import FocusInput from "./components/FocusInput";
+import HookTimer from "./components/HookTimer";
+import DocTitle from "./components/DocTitle";
+import CustomCounter from "./components/CustomCounter";
 
 export const UserContext = React.createContext();
 export const SportContext = React.createContext();
@@ -46,7 +50,11 @@ function App() {
             </UserContext.Provider> */}
             {/* <CounterOne /> */}
             {/* <CounterTwo /> */}
-            <CounterThree />
+            {/* <CounterThree /> */}
+            {/* <FocusInput /> */}
+            {/* <HookTimer /> */}
+            {/* <DocTitle /> */}
+            <CustomCounter />
         </div>
     );
 }
