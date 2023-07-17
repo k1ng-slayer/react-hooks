@@ -2,7 +2,7 @@ import React from "react";
 import useCounter from "../hooks/useCounter";
 
 function CustomCounter() {
-    const [count, increment, decrement, reset] = useCounter();
+    const [count, increment, decrement, reset] = useCounter(1, 5);
 
     return (
         <>
